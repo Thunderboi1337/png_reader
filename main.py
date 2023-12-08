@@ -10,6 +10,7 @@ class OS(enum.Enum):
 class Language(enum.Enum):
     Eng = 'eng'
     Jpn = 'jpn'
+    
 
 class ImageReader:
 
@@ -32,5 +33,5 @@ class ImageReader:
     
 if __name__ == '__main__':
     ir = ImageReader(OS.Windows)
-    text = ir.extract_text('img/test1.jpg', lang=Language.Jpn)
+    text = ir.extract_text('img/lang.png', lang=Language.Jpn)
     print(text)
